@@ -27,14 +27,14 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.quittle.setup-android-sdk:com.quittle.setup-android-sdk.gradle.plugin:3.1.0"
+        //classpath "com.quittle.setup-android-sdk:com.quittle.setup-android-sdk.gradle.plugin:3.1.0"
         classpath "com.android.tools.build:gradle:$ANDROID_GRADLE_PLUGIN_VERSION"
     }
 }
 
-apply plugin: 'com.quittle.setup-android-sdk'
+/*apply plugin: 'com.quittle.setup-android-sdk'
 
-setupAndroidSdk {
+SetupAndroidSdk {
     packages "platforms;android-${ANDROID_COMPILE_SDK_VERSION}",
              "build-tools;${ANDROID_BUILD_TOOLS_VERSION}",
              "platform-tools",
@@ -44,7 +44,7 @@ setupAndroidSdk {
     if (licensesDir) {
         licensesDirectory file(licensesDir)
     }
-}
+}*/
 
 allprojects {
     repositories {
